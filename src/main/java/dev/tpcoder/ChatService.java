@@ -26,8 +26,6 @@ public class ChatService implements UserStreamCommunication, ModelCommunication 
                 .build();
     }
 
-    // Could you give me the way to exercise for office worker, please?
-    // Based on previous answer, What if I don't have much place outside?
     public CompletableFuture<Void> ask(String userPrompt) {
         TokenStream tokenStream = chatWithModel(userPrompt);
         CompletableFuture<Void> future = new CompletableFuture<>();
